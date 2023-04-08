@@ -10,11 +10,13 @@ import io.github.arthursiq5.one.digitalinnovation.labpadroesdeprojeto.model.Ende
 import io.github.arthursiq5.one.digitalinnovation.labpadroesdeprojeto.model.EnderecoRepository;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author arthur
  */
+@Service
 public class ClienteServiceImplementation implements ClienteService {
 
     @Autowired
@@ -65,6 +67,9 @@ public class ClienteServiceImplementation implements ClienteService {
         clienteRepository.deleteById(id);
     }
 
+    /**
+     * @param cliente cliente que quer salvar
+     */
     private void salvarClienteComCep(Cliente cliente) {
         // Verificar se o Endereco do Cliente já existe (pelo CEP).
         String cep = cliente.getEndereco().getCep();
