@@ -4,6 +4,7 @@
  */
 package io.github.arthursiq5.one.digitalinnovation.labpadroesdeprojeto.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -13,6 +14,7 @@ import jakarta.persistence.ManyToOne;
  *
  * @author arthur
  */
+@Entity
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

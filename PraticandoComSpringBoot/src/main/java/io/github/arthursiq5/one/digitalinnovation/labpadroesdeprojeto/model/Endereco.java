@@ -4,12 +4,14 @@
  */
 package io.github.arthursiq5.one.digitalinnovation.labpadroesdeprojeto.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 /**
  *
  * @author arthur
  */
+@Entity
 public class Endereco {
     @Id
     private String cep;
