@@ -4,8 +4,8 @@
  */
 package io.github.arthursiq5.one.digitalinnovation.labpadroesdeprojeto.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  *
